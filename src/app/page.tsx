@@ -6,6 +6,7 @@ import { VisionScanner } from "@/components/scanner/VisionScanner";
 import { Insights } from "@/components/dashboard/Insights";
 import { LedgerHistory } from "@/components/history/LedgerHistory";
 import { SmartAdvice } from "@/components/suggestions/SmartAdvice";
+import { NutritionCalculator } from "@/components/calculator/NutritionCalculator";
 import { getLedger, FoodRecord } from "@/lib/storage";
 import { Card } from "@/components/ui/card";
 import { Zap, Trophy, Flame } from "lucide-react";
@@ -103,6 +104,8 @@ export default function Home() {
             </Card>
           </div>
         );
+      case "calculator":
+        return <NutritionCalculator lang={lang} />;
       default:
         return null;
     }

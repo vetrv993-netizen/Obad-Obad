@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Camera, History, LayoutDashboard, Sparkles, Languages, Settings } from "lucide-react";
+import { Camera, History, LayoutDashboard, Sparkles, Languages, Settings, Calculator } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -18,10 +18,10 @@ export const MobileShell = ({ children, activeTab, setActiveTab, lang, setLang }
 
   const tabs = [
     { id: "dashboard", icon: LayoutDashboard, label: { en: "Home", ar: "الرئيسية" } },
-    { id: "history", icon: History, label: { en: "History", ar: "السجل" } },
+    { id: "calculator", icon: Calculator, label: { en: "Calc", ar: "حاسبة" } },
     { id: "scanner", icon: Camera, label: { en: "Scan", ar: "مسح" }, primary: true },
+    { id: "history", icon: History, label: { en: "History", ar: "السجل" } },
     { id: "ai", icon: Sparkles, label: { en: "Advice", ar: "نصائح" } },
-    { id: "settings", icon: Settings, label: { en: "Settings", ar: "إعدادات" } },
   ];
 
   return (
