@@ -4,85 +4,12 @@
 
 @layer base {
   :root {
-    --background: 260 15% 98%;
-    --foreground: 260 20% 10%;
-    --card: 260 15% 96%;
-    --card-foreground: 260 20% 10%;
-    --popover: 260 15% 98%;
-    --popover-foreground: 260 20% 10%;
-    --primary: 267 100% 77%;
-    --primary-foreground: 260 20% 10%;
-    --secondary: 240 100% 90%;
-    --secondary-foreground: 260 20% 10%;
-    --muted: 260 10% 90%;
-    --muted-foreground: 260 10% 40%;
-    --accent: 240 100% 90%;
-    --accent-foreground: 260 20% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 260 15% 90%;
-    --input: 260 15% 90%;
-    --ring: 267 100% 77%;
-    --radius: 1rem;
-    --chart-1: 267 100% 77%;
-    --chart-2: 240 100% 90%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
   }
 
   .dark {
-    --background: 257 12% 8%; /* Nocturnal Depth #141217 equivalent */
-    --foreground: 240 100% 98%;
-    --card: 257 12% 10%;
-    --card-foreground: 240 100% 98%;
-    --popover: 257 12% 8%;
-    --popover-foreground: 240 100% 98%;
-    --primary: 267 100% 77%; /* Electric Indigo #BF89FF equivalent */
-    --primary-foreground: 260 20% 10%;
-    --secondary: 240 100% 90%; /* Glacial Periwinkle #CCCCFF equivalent */
-    --secondary-foreground: 260 20% 10%;
-    --muted: 257 12% 16%;
-    --muted-foreground: 240 10% 70%;
-    --accent: 267 100% 77%;
-    --accent-foreground: 260 20% 10%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 240 100% 98%;
-    --border: 257 12% 18%;
-    --input: 257 12% 18%;
-    --ring: 267 100% 77%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-headline tracking-tight;
-  }
-}
-
-/* Safe areas for mobile-like experience */
-.mobile-shell {
-  max-width: 480px;
-  margin: 0 auto;
-  min-height: 100dvh;
-  position: relative;
-  display: flex;
-  flex-col: column;
-}
-
-.glass-morphism {
-  @apply bg-background/60 backdrop-blur-md border-t border-white/5;
-}
-
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-primary/20 rounded-full;
 }
